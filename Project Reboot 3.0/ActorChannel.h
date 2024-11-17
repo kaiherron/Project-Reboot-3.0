@@ -8,7 +8,7 @@ class UActorChannel : public UChannel
 public:
 	double& GetLastUpdateTime()
 	{
-		static auto LastUpdateTimeOffset = GetOffset("Actor") + 8 + 4 + 4 + 8; // checked on 4.19
+		static auto LastUpdateTimeOffset = GetOffset("Actor") + 8 + 4 + 4 + 8; // checked on 4.19, a
 		return Get<double>(LastUpdateTimeOffset);
 	}
 
